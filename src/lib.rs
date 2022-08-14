@@ -3,13 +3,13 @@ extern crate getset;
 
 #[derive(Default, Debug, Getters, PartialEq, Eq)]
 pub struct HttpRequest {
-    #[getset(get)]
+    #[getset(get = "pub")]
     uri: String,
-    #[getset(get)]
+    #[getset(get = "pub")]
     method: String,
-    #[getset(get)]
+    #[getset(get = "pub")]
     version: String,
-    #[getset(get)]
+    #[getset(get = "pub")]
     field: Vec<String>,
 }
 
